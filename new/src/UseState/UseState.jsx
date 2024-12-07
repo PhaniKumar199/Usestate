@@ -7,7 +7,8 @@ function ToggleButton() {
   
   return (
         <div>
-       <button onClick={toggle}>
+       <button onClick={toggle}
+       style = {{backgroundColor: isOn? "red" : "green"}}>
       {isOn ? "ON" : "OFF"}
     </button>
         </div>
